@@ -1,0 +1,34 @@
+<resources>
+
+    <style name="Widget.Theme.CoTrucking.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+
+
+    <style name="MyAppBarStyle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">32sp</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:state_multiline">true</item>
+    </style>
+
+    <style name="MyProgressBar" parent="">
+        <item name="color">@color/black</item>
+    </style>
+
+    <style name="CustomAlertDialog" parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="android:windowBackground">@drawable/custom_alert_dialog</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="CustomSnackbarTheme">
+        <item name="snackbarStyle">@style/MySnackBarStyle</item>
+    </style>
+
+    <style name="MySnackBarStyle" parent="Widget.MaterialComponents.Snackbar">
+        <item name="android:background">@color/main_color</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+</resources>

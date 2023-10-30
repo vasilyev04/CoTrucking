@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SignUpActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/sign_up_toolbar"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            app:title="Co-Trucking"
+            android:layout_height="?attr/actionBarSize"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/tvMainReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar_layout"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/registration"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMainReg"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_italic"
+        android:text="@string/main_welcome"
+        android:textSize="18sp" />
+
+
+    <LinearLayout
+        android:id="@+id/passwdEmailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/email"
+            app:counterEnabled="true"
+            app:counterMaxLength="60"
+            app:startIconDrawable="@drawable/ic_baseline_email_main_color_24">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="-1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@."
+                android:inputType="textEmailAddress"
+                android:maxLength="60" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/password"
+            app:counterEnabled="true"
+            app:counterMaxLength="20"
+            app:endIconMode="password_toggle"
+            app:passwordToggleContentDescription="true"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:maxLength="20" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordRepeatLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/repeat_password"
+            app:counterEnabled="true"
+            app:counterMaxLength="20"
+            app:endIconMode="password_toggle"
+            app:passwordToggleContentDescription="true"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etRepeatPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:maxLength="20" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/passwdEmailLayout"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/custom_rectangle_button"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/sign_up"
+        android:textSize="20sp" />
+
+</RelativeLayout>

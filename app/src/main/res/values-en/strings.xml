@@ -1,0 +1,164 @@
+<resources>
+    <string name="app_name">Co-Trucking</string>
+    <string name="exit_toast">Нажмитие еще раз для выхода</string>
+    <string name="loading">Загрузка...</string>
+    <string name="authorization">Авторизация</string>
+    <string name="email">Почта</string>
+    <string name="password">Пароль</string>
+    <string name="repeat_password">Повторите пароль</string>
+    <string name="sign_in">Войти</string>
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="registration">Регистрация</string>
+    <string name="reset_passwd">Восстановление</string>
+    <string name="btn_send_reset_email">Отправить письмо</string>
+    <string name="message_successful_sent">Письмо успешно отправлено</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="required_field">Необходимо*</string>
+    <string name="main_welcome">Добро пожаловать в Co-Trucking</string>
+    <string name="error_email_exist">Пользователь с таким Email уже существует</string>
+    <string name="error_wake_password">Пароль должен содержать не менее 6 симоволов</string>
+    <string name="error_type_crown_passwords">Введите одинаковые пароли</string>
+    <string name="error_type_correct_email">Введите корректный Email</string>
+    <string name="error_wake_password_NL">Пароль должен содержать цифры и буквы</string>
+    <string name="error_empty_field">Это обязательное поле</string>
+    <string name="error_user_not_found">Пользователя с таким Email не существует</string>
+    <string name="error_invalid_pass_or_email">Неверный Email или пароль</string>
+    <string name="sign_up_successful">Регистрация прошла успешно!</string>
+    <string name="sign_in_successful">Авторизация прошла успешно!</string>
+    <string name="first_name">Имя</string>
+
+    <string name="hello">Привет</string>
+    <string name="user_indicator_client">Я клиент</string>
+    <string name="user_indicator_transporter">Я перевозчик</string>
+    <string name="user_indicator_administration">Администрация</string>
+
+    <string name="ad_transport_type">Тип транспорта*</string>
+    <string name="ad_car_type">Легковой</string>
+    <string name="ad_truck_type">Грузовой</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_home">Главная</string>
+    <string name="title_profile">Профиль</string>
+    <string name="title_add">Подать</string>
+    <string name="title_chat">Сообщения</string>
+    <string name="title_favorites">Избранное</string>
+
+    <string name="title_cargo">Грузы</string>
+    <string name="title_transporters">Перевозчики</string>
+    <string name="title_create_ad">Создать объявление</string>
+
+    <string name="title_send_cargo">Отправить груз</string>
+    <string name="title_how_transporter">Я перевозчик</string>
+    <string name="et_add">Добавить</string>
+    <string name="et_label_cargo_name">Название груза*</string>
+    <string name="hint_input">Ввести</string>
+    <string name="hint_publish">Опубликовать</string>
+    <string name="hint_user_contact_number">Телефон (необязательно)</string>
+    <string name="hint_city">Город</string>
+    <string name="et_label_cargo_weight">Вес*</string>
+    <string name="hint_weight">кг</string>
+    <string name="hint_volume">м³</string>
+    <string name="et_label_cargo_volume">Объем*</string>
+    <string name="cargo_type_large">Крупный</string>
+    <string name="cargo_type_medium">Средний</string>
+    <string name="cargo_type_small">Малый</string>
+    <string name="et_label_cargo_dimensions">Габариты*</string>
+    <string name="et_label_cargo_start_location">Откуда*</string>
+    <string name="et_label_cargo_end_location">Куда*</string>
+    <string name="hint_description">Опишите подробности</string>
+    <string name="et_label_cargo_description">Описание*</string>
+    <string name="tv_label_transporter_auto_mark">Марка автомобиля*</string>
+    <string name="tv_label_transporter_load_capacity">Грузоподъемность*</string>
+    <string name="tv_label_transporter_description">Описание*</string>
+    <string name="tv_label_transporter_start_location">Ваше местоположение*</string>
+    <string name="tv_transporter_end_location">Куда направляетесь?*</string>
+    <string name="tv_label_transporter_truck_mark">Марка грузовика*</string>
+    <string name="rg_truck">Грузовой</string>
+    <string name="rg_car">Легковой</string>
+    <string name="truck_type">Тип грузовика*</string>
+    <string name="truck_type_tent">Тент</string>
+    <string name="truck_type_closed">Закрытый</string>
+    <string name="truck_type_open">Открытый</string>
+    <string name="tv_label_user_name">Ваше имя*</string>
+    <string name="add_photo">Добавить фото</string>
+
+    <string name="alert_title_choice">Выберите действие</string>
+    <string name="alert_choice_take_photo">Сделать фотографию</string>
+    <string name="alert_choice_open_gallery">Открыть галерею</string>
+
+    <string name="alert_title_question">Вы уверены?</string>
+    <string name="alert_no_photo_message">Опубликовать объявление без фотографии?</string>
+    <string name="alert_delete_photo">Удалить фотографию профиля?</string>
+    <string name="alert_dialog_report_title">Жалоба успешно отправлена.</string>
+    <string name="alert_dialog_report_message">Благодарим вас за помощь в развитие нашего приложения.</string>
+    <string name="alert_positive_button">Да</string>
+    <string name="alert_negative_button">Отмена</string>
+    <string name="alert_report_positive_button">Ок</string>
+
+
+    <string name="snackbar_added_to_favorites">Добавлено в избранное!</string>
+    <string name="snackbar_removed_from_favorites">Удалено из избранного.</string>
+
+    <string name="bottom_fragment_favorite_welcome_text">Тут вы можете посмотреть свои избранные объявления.
+                Добавьте их здесь.</string>
+    <string name="show_ad_title_dimensions">Габариты</string>
+    <string name="show_ad_tv_description">Описание</string>
+    <string name="show_ad_start_location">Откуда</string>
+    <string name="show_ad_end_location">Куда</string>
+    <string name="show_ad_report">Пожаловаться</string>
+    <string name="show_ad_write">Написать</string>
+    <string name="show_ad_title_truck_type">Тип грузовика</string>
+    <string name="weight">кг</string>
+    <string name="volume">м³</string>
+    <string name="phone">Телефон</string>
+    <string name="type">Тип:</string>
+
+    <string name="transporter_end_tv_load_capacity">(грузоподъемность)</string>
+    <string name="no_phone">Отсутствует</string>
+    <string name="edit_profile_save_changes">Применить изменения</string>
+    <string name="edit_profile_hide_phone">Скрыть номер</string>
+    <string name="edit_profile_hide_email">Скрыть Email</string>
+    <string name="profile_not_filled">Не заполнено</string>
+    <string name="profile_phone">Телефон:</string>
+    <string name="profile_about_me">Обо мне:</string>
+    <string name="profile_age">Возраст:</string>
+    <string name="profile_name">Имя:</string>
+    <string name="profile_indicator_transporter">Я перевозчик</string>
+    <string name="profile_indicator_client">Я клиент</string>
+
+    <string name="toast_changes_saved">Изменения сохранены</string>
+    <string name="error_incorrect_phone">Некорректный номер</string>
+    <string name="et_report_hint">Пожалуйста, опишите подробнее в чем проблема.</string>
+    <string name="send_report">Отправить жалобу</string>
+    <string name="report">Жалоба</string>
+    <string name="title_account">Аккаунт</string>
+    <string name="title_sign_out">Выйти</string>
+    <string name="my_ads_welcome_text">Тут вы можете посмотреть свои объявления. Создайте свое первое объвление здесь.</string>
+    <string name="my_ads">Мои объявления</string>
+
+    <string name="edit_ad">Редактировать объявление.</string>
+    <string name="edit_ad_help_text">Вы можете отредактировать свои объявления</string>
+    <string name="edit_successful">Объявление успешно отредактировано</string>
+    <string name="default_user_name">Ваше имя</string>
+    <string name="today">Сегодня в</string>
+    <string name="type_text">Сообщение</string>
+    <string name="chat_welcome_text">Тут вы можете посмотреть свои чаты. Пока что список пуст.</string>
+    <string name="card_view_load_capacity">(грузоподъемность)</string>
+    <string name="hidden">Скрыт</string>
+
+    <string name="other">Прочее</string>
+    <string name="about">О разработчике</string>
+    <string name="developer">Создатель приложения:</string>
+
+    <string name="welcome_chat_message">Здравствуйте! Спасибо что скачали наше приложение. В нем Вы можете найти груз или попросить о перевозке вашего груза. Пока что можете ознакомиться с приложением поближе. Если у Вас возникнут вопросы, можете написать сообщение сюда и наши помощники ответят Вам, как можно скорее. Удачи!😉</string>
+
+    <string-array name="reporter_flags">
+        <item>Оскорбительное объявление</item>
+        <item>Не несет смысловой нагрузки</item>
+        <item>Мошеничество</item>
+        <item>Порнографический контент</item>
+    </string-array>
+
+</resources>

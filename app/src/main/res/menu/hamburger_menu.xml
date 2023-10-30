@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/group_main" android:checkableBehavior="all">
+        <item android:title="@string/title_home" android:id="@+id/home" android:icon="@drawable/ic_customs_home_outline_svg"> </item>
+        <item android:title="@string/title_favorites" android:id="@+id/favorites" android:icon="@drawable/ic_baseline_favorite_border_24"> </item>
+        <item android:title="@string/title_add" android:id="@+id/add" android:icon="@drawable/ic_baseline_add_box_24"> </item>
+        <item android:title="@string/title_chat" android:id="@+id/messages" android:icon="@drawable/ic_baseline_chat_bubble_outline_24"> </item>
+        <item android:title="@string/title_profile" android:id="@+id/profile" android:icon="@drawable/ic_baseline_person_outline_24"> </item>
+        <item android:title="@string/my_ads" android:id="@+id/my_ads" android:icon="@drawable/ic_baseline_newspaper_black_24"> </item>
+    </group>
+
+    <item android:title="@string/other">
+        <menu>
+            <item android:title="@string/about"
+                android:id="@+id/about"
+                android:icon="@drawable/ic_baseline_info_24"
+                android:checked="false"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/title_account">
+        <menu>
+            <item android:title="@string/title_sign_out"
+                android:id="@+id/sign_out"
+                android:icon="@drawable/ic_baseline_logout_24"
+                android:checked="false"/>
+        </menu>
+    </item>
+
+</menu>

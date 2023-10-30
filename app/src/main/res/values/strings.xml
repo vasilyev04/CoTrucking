@@ -1,0 +1,163 @@
+<resources>
+    <string name="app_name">Co-Trucking</string>
+    <string name="exit_toast">Press back again to exit</string>
+    <string name="loading">Loading...</string>
+    <string name="authorization">Authorization</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="registration">Registration</string>
+    <string name="reset_passwd">Reset</string>
+    <string name="btn_send_reset_email">Send an email</string>
+    <string name="message_successful_sent">Mail is successfully sent</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="required_field">Required*</string>
+    <string name="main_welcome">Welcome to Co-Trucking</string>
+    <string name="error_email_exist">User with this Email is already exists</string>
+    <string name="error_wake_password">Password must contain at lest 6 characters</string>
+    <string name="error_type_crown_passwords">Enter the same passwords</string>
+    <string name="error_type_correct_email">Enter the correct Email</string>
+    <string name="error_wake_password_NL">Password must contain numbers and letters</string>
+    <string name="error_empty_field">This is required field</string>
+    <string name="error_user_not_found">User with this Email doesn\'t exist</string>
+    <string name="error_invalid_pass_or_email">Incorrect Email or password</string>
+    <string name="sign_up_successful">Sign Up is successful!</string>
+    <string name="sign_in_successful">Sign In is successful!</string>
+    <string name="first_name">Name</string>
+
+    <string name="hello">Hello</string>
+    <string name="user_indicator_client">I\'m a client</string>
+    <string name="user_indicator_transporter">I\'m a transporter</string>
+    <string name="user_indicator_administration">Administration</string>
+
+    <string name="ad_transport_type">Transport type*</string>
+    <string name="ad_car_type">Car</string>
+    <string name="ad_truck_type">Truck</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_add">Place</string>
+    <string name="title_chat">Messages</string>
+    <string name="title_favorites">Favorites</string>
+
+    <string name="title_cargo">Cargo</string>
+    <string name="title_transporters">Transporters</string>
+    <string name="title_create_ad">Create ad</string>
+
+    <string name="title_send_cargo">Send a cargo</string>
+    <string name="title_how_transporter">I\'m transporter</string>
+    <string name="et_add">Add</string>
+    <string name="et_label_cargo_name">Cargo name*</string>
+    <string name="hint_input">Type</string>
+    <string name="hint_publish">Publish</string>
+    <string name="hint_user_contact_number">Phone number (not required)</string>
+    <string name="hint_city">City</string>
+    <string name="et_label_cargo_weight">Weight*</string>
+    <string name="hint_weight">kg</string>
+    <string name="hint_volume">m³</string>
+    <string name="et_label_cargo_volume">Volume*</string>
+    <string name="cargo_type_large">Large</string>
+    <string name="cargo_type_medium">Medium</string>
+    <string name="cargo_type_small">Small</string>
+    <string name="et_label_cargo_dimensions">Dimensions*</string>
+    <string name="et_label_cargo_start_location">From*</string>
+    <string name="et_label_cargo_end_location">To*</string>
+    <string name="hint_description">Describe the details</string>
+    <string name="et_label_cargo_description">Description*</string>
+    <string name="tv_label_transporter_auto_mark">Car mark*</string>
+    <string name="tv_label_transporter_load_capacity">Load capacity*</string>
+    <string name="tv_label_transporter_description">Description*</string>
+    <string name="tv_label_transporter_start_location">Your location*</string>
+    <string name="tv_transporter_end_location">Where are you going?*</string>
+    <string name="tv_label_transporter_truck_mark">Truck mark*</string>
+    <string name="rg_truck">Truck</string>
+    <string name="rg_car">Car</string>
+    <string name="truck_type">Truck type*</string>
+    <string name="truck_type_tent">Awning</string>
+    <string name="truck_type_closed">Closed</string>
+    <string name="truck_type_open">Opened</string>
+    <string name="tv_label_user_name">Your name*</string>
+    <string name="add_photo">Add photo</string>
+
+    <string name="alert_title_choice">Choose the action</string>
+    <string name="alert_choice_take_photo">Take a picture</string>
+    <string name="alert_choice_open_gallery">Open gallery</string>
+
+    <string name="alert_title_question">Are you sure?</string>
+    <string name="alert_no_photo_message">Publish the ad without a photo?</string>
+    <string name="alert_delete_photo">Delete profile photo?</string>
+    <string name="alert_dialog_report_title">Report successfully sent.</string>
+    <string name="alert_dialog_report_message">Thank you for your contribution to the development of our application.</string>
+    <string name="alert_positive_button">Yes</string>
+    <string name="alert_negative_button">Cancel</string>
+    <string name="alert_report_positive_button">OK</string>
+
+
+    <string name="snackbar_added_to_favorites">Added to favorites!</string>
+    <string name="snackbar_removed_from_favorites">Deleted from favorites.</string>
+
+    <string name="bottom_fragment_favorite_welcome_text">You can see your favorites ads. Add it here.</string>
+    <string name="show_ad_title_dimensions">Dimensions</string>
+    <string name="show_ad_tv_description">Description</string>
+    <string name="show_ad_start_location">From</string>
+    <string name="show_ad_end_location">To</string>
+    <string name="show_ad_report">Send a Report</string>
+    <string name="show_ad_write">Write</string>
+    <string name="show_ad_title_truck_type">Truck type</string>
+    <string name="weight">kg</string>
+    <string name="volume">m³</string>
+    <string name="phone">Phone number</string>
+    <string name="type">Type:</string>
+
+    <string name="transporter_end_tv_load_capacity">(load capacity)</string>
+    <string name="no_phone">No phone</string>
+    <string name="edit_profile_save_changes">Apply changes</string>
+    <string name="edit_profile_hide_phone">Hide phone number</string>
+    <string name="edit_profile_hide_email">Hide Email</string>
+    <string name="profile_not_filled">Not filled</string>
+    <string name="profile_phone">Phone number:</string>
+    <string name="profile_about_me">About me:</string>
+    <string name="profile_age">Age:</string>
+    <string name="profile_name">Name:</string>
+    <string name="profile_indicator_transporter">I\'m transporter</string>
+    <string name="profile_indicator_client">I\'m a client</string>
+
+    <string name="toast_changes_saved">Changes saved</string>
+    <string name="error_incorrect_phone">Incorrect phone number</string>
+    <string name="et_report_hint">Please, describe in more detail what is wrong.</string>
+    <string name="send_report">Send a Report</string>
+    <string name="report">Report</string>
+    <string name="title_account">Account</string>
+    <string name="title_sign_out">Sign Out</string>
+    <string name="my_ads_welcome_text">You can see your ads. Create your first ad here.</string>
+    <string name="my_ads">My ads</string>
+
+    <string name="edit_ad">Edit ad</string>
+    <string name="edit_ad_help_text">You can edit your ads</string>
+    <string name="edit_successful">Ad successfully edited</string>
+    <string name="default_user_name">Your name</string>
+    <string name="today">Today at</string>
+    <string name="type_text">Type your message</string>
+    <string name="chat_welcome_text">You can see your chats. The list is empty yet.</string>
+
+
+    <string name="welcome_chat_message">Hello! Thank you for downloading our app. Here you can find the cargo or transporters for your cargo. For now, you can take a closer look at the application. If you have any questions, you can write a message here and our assistants will answer you as soon as possible. Good luck! 😉 </string>
+    <string name="card_view_load_capacity">(load capacity)</string>
+    <string name="hidden">Hidden</string>
+    <string name="other">Other</string>
+    <string name="about">About developer</string>
+    <string name="developer">App developer:</string>
+
+    <string-array name="reporter_flags">
+        <item>Bullying</item>
+        <item>Nonsense ad</item>
+        <item>Scam</item>
+        <item>Pornographic content</item>
+    </string-array>
+
+</resources>

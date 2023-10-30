@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.EditTruckAdActivity">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:title="@string/edit_ad"
+        app:maxLines="2"
+        app:expandedTitleTextAppearance="@style/MyAppBarStyle"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"/>
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+</com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/transporter_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp" />
+
+            <TextView
+                android:id="@+id/tv_transporter_auto_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/input_layout_transporter_truck_mark"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/tv_label_transporter_truck_mark"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_transporter_truck_mark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_transporter_auto_mark"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                app:boxBackgroundColor="@color/gray"
+                app:boxStrokeColor="@color/main_color"
+                app:boxStrokeWidth="0dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="30"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/et_transporter_truck_mark"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/hint_input"
+                    android:maxLength="30"
+                    android:paddingTop="5dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_transporter_load_capacity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_layout_transporter_truck_mark"
+                android:layout_alignStart="@+id/input_layout_transporter_load_capacity"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/tv_label_transporter_load_capacity"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_transporter_load_capacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_transporter_load_capacity"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeColor="@color/main_color"
+                app:boxBackgroundColor="@color/gray"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/et_transporter_truck_load_capacity"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingTop="5dp"
+                    android:hint="@string/hint_weight"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/tv_transporter_truck_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_layout_transporter_load_capacity"
+                android:layout_alignStart="@+id/rg_truck_types"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/truck_type"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+            <RadioGroup
+                android:id="@+id/rg_truck_types"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv_transporter_truck_type"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/custom_switcher_outline"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/truck_tent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:textColor="@color/black"
+                    android:text="@string/truck_type_tent"
+                    android:fontFamily="@font/roboto"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/switch_item_background"
+                    android:button="@null"/>
+
+                <RadioButton
+                    android:id="@+id/truck_closed"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:textColor="@color/black"
+                    android:text="@string/truck_type_closed"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/switch_item_background"
+                    android:button="@null"/>
+
+
+                <RadioButton
+                    android:id="@+id/truck_open"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:textColor="@color/black"
+                    android:text="@string/truck_type_open"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/switch_item_background"
+                    android:button="@null"/>
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/tv_truck_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg_truck_types"
+                android:layout_alignStart="@id/input_layout_transporter_description"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/tv_label_transporter_description"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_transporter_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_truck_description"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:boxBackgroundColor="@color/gray"
+                app:boxStrokeColor="@color/main_color"
+                app:boxStrokeWidth="0dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="1000"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/et_transporter_truck_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="top|start"
+                    android:hint="@string/hint_description"
+                    android:inputType="textMultiLine"
+                    android:maxLength="1000"
+                    android:paddingTop="5dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <FrameLayout
+                android:id="@+id/layout_upload_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@id/input_layout_transporter_description">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="7dp">
+
+                    <ImageView
+                        android:id="@+id/iv_ad_image"
+                        android:layout_width="200dp"
+                        android:layout_height="300dp"
+                        android:visibility="gone"
+                        android:scaleType="centerCrop" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <ImageButton
+                    android:id="@+id/btn_delete_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:layout_gravity="end|top"
+                    android:src="@drawable/ic_baseline_close_24"
+                    android:visibility="gone"
+                    android:translationZ="2dp"/>
+
+
+                <Button
+                    android:id="@+id/btn_upload_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/white"
+                    android:drawableLeft="@drawable/ic_baseline_add_a_photo_24"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/add_photo"
+                    android:textColor="@color/black"
+                    android:textSize="22sp" />
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout_tvs_locations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_upload_photo"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_transporter_start_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/tv_label_transporter_start_location"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_transporter_end_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/tv_transporter_end_location"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_ets_locations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearLayout_tvs_locations"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_transporter_start_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    app:boxBackgroundColor="@color/gray"
+                    app:boxStrokeColor="@color/main_color"
+                    app:boxStrokeWidth="0dp"
+                    app:hintEnabled="false">
+
+                    <EditText
+                        android:id="@+id/et_transporter_truck_start_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="@string/hint_city"
+                        android:maxLength="20"
+                        android:paddingTop="5dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_transporter_end_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    app:boxBackgroundColor="@color/gray"
+                    app:boxStrokeColor="@color/main_color"
+                    app:boxStrokeWidth="0dp"
+                    app:hintEnabled="false">
+
+                    <EditText
+                        android:id="@+id/et_transporter_truck_end_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="@string/hint_city"
+                        android:maxLength="20"
+                        android:paddingTop="5dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout_ets_locations"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/tv_label_user_name"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@+id/tv_user_name"
+                app:boxBackgroundColor="@color/gray"
+                app:boxStrokeColor="@color/main_color"
+                app:boxStrokeWidth="0dp"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/et_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textPersonName|textCapSentences"
+                    android:hint="@string/hint_input"
+                    android:maxLength="10"
+                    android:paddingTop="5dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/tv_contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_layout_user_name"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/hint_user_contact_number"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_user_contactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@id/tv_contact_number"
+                app:boxBackgroundColor="@color/gray"
+                app:boxStrokeColor="@color/main_color"
+                app:boxStrokeWidth="0dp"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/et_user_contactNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:hint="@string/hint_input"
+                    android:paddingTop="5dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btn_publish"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/input_layout_user_contactNumber"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_rectangle_button"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/edit_profile_save_changes"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

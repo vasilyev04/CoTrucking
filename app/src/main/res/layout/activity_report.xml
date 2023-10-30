@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ReportActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/report"
+        android:textColor="@color/black"
+        android:textSize="32sp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@color/gray"
+        android:layout_marginEnd="10dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_report_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:boxBackgroundColor="@color/gray"
+        app:boxStrokeColor="@color/main_color"
+        app:boxStrokeWidth="0dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="1000"
+        app:hintEnabled="false">
+
+        <EditText
+            android:id="@+id/et_report_description"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="top|start"
+            android:hint="@string/et_report_hint"
+            android:inputType="textMultiLine|textPersonName"
+            android:maxLength="1000"
+            android:paddingTop="5dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn_send_report"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/custom_rectangle_button"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/send_report"
+        android:textSize="20sp" />
+
+</LinearLayout>

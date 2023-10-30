@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "509330219533",
+    "project_id": "co-trucking-f8527",
+    "storage_bucket": "co-trucking-f8527.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509330219533:android:24bd1b2cb47d6945562b44",
+        "android_client_info": {
+          "package_name": "com.kiparisov.cotrucking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509330219533-mo0vudjckqf3h2h3rso9hqt54aand7sb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOb8CRN3VDFkCdg85fQ-H6noEMsYZ72nU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509330219533-mo0vudjckqf3h2h3rso9hqt54aand7sb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
